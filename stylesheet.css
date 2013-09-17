@@ -1,0 +1,65 @@
+/* Layout Board */
+.row{
+  width: 500px;
+  height: 25px;
+}
+
+.cell{
+  float: left;
+  width: 25px;
+  height: 25px;
+}
+
+.wall{
+  background-color: black;
+}
+
+.open{
+  background-color: GreenYellow;
+}
+
+.apple{
+  background-color: red;
+}
+.snake{
+  background-color: green;
+}
+
+/* Layout Game Info */
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+}
+
+.header{
+	width: 500px;
+	font-size: 48;
+	color: black;
+	text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.info{
+	width: 500px;
+	font-size: 48;
+	color: red;
+	text-align: center;
+}
+
+.score{
+	width: 500px;
+	font-size: 32;
+	color: blue;
+	text-align: center;
+  padding-top: 10px;
+}
