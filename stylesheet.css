@@ -40,7 +40,6 @@ body {
   overflow: hidden;
   background-color: black;
 }
-
 .header {
 	font-size: 48;
 	text-align: center;
@@ -56,14 +55,12 @@ body {
 
 .info {
 	font-size: 48;
-	color: red;
 	text-align: center;
   color: #D8D8D8;
 }
 
 .score {
 	font-size: 32;
-	color: blue;
 	text-align: center;
   padding-top: 10px;
   color: #D8D8D8;
