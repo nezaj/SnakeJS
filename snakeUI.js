@@ -1,11 +1,11 @@
 var game = new Game(20, 20);
 
 function drawSnake() {
-  $('body').empty();
-  $('body').append('<div class="header">Snake!</div>');
+  $('.snakeUI').empty();
+  // $('.snakeUI').append('<div class="header">Snake!</div>');
   for (var i = 0; i < game.maxRow; i++) {
     var $row = $('<div class="row"></div>');
-    $('body').append($row);
+    $('.snakeUI').append($row);
     for (var j = 0; j < game.maxCol; j++) {
       var cell_id = i + " " + j;
       var $cell = $('<span class="cell" id="' + cell_id + '"></span>');
@@ -22,21 +22,21 @@ function drawSnake() {
       $row.append($cell);
     }
   }
-	$('body').append('<div class="score">Score: ' + game.score + '</div>');
+	$('.snakeUI').append('<div class="score">Score: ' + game.score + '</div>');
 }
 
 function run_loop() {
   game.game_step();
   drawSnake();
   if (game.snake.alive === false) {
-  	$('body').append('<div class="info">Game Over!</div>');
+  	$('.snakeUI').append('<div class="info">Game Over!</div>');
     clearInterval(this.gameInterval);
   }
 }
 
 function pauseGame() {
   if (this.gameInterval) {
-    $('body').append('<div class="info">Paused!</div>');
+    $('.snakeUI').append('<div class="info">Paused!</div>');
     clearInterval(this.gameInterval);
     this.gameInterval = null;
   } else {

@@ -1,4 +1,4 @@
 SnakeJS
 =======
 
-Classic snake game written in JS
+In-browser Snake game written in Object-Oriented JS
